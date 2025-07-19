@@ -49,33 +49,47 @@ Understanding the intent and methods of APT29 is essential for modern defence te
 
 ## ➂ TACTICS, TECHNIQUES, AND PROCEDURES (TTPs)
 
-APT29’s operations align with a broad set of MITRE ATT&CK techniques. Their focus is long-term access and data exfiltration using stealthy, adaptable tools and methods.
+APT29’s operations align with a wide set of MITRE ATT&CK techniques. The group is known for stealthy, long-term access using minimal malware and careful abuse of legitimate services.
 
-This section groups observed TTPs by phase of the attack lifecycle.
+<details>
+<summary><strong>Click to expand full list of tactics and techniques</strong></summary>
 
----
+<br>
 
-**Initial Access**
-- **Spearphishing via Service (T1566.003):** Targeted emails using malicious links or attachments to compromise government officials, researchers, and diplomats.
-- **Valid Accounts (T1078):** Use of compromised credentials to log in via legitimate services, particularly Microsoft 365 and VPN portals.
+### Initial Access
+- **Spearphishing via Service** — T1566.003  
+  Targeted phishing emails with links to credential harvesting pages or malware delivery.
+- **Valid Accounts** — T1078  
+  Use of stolen credentials to log into VPNs, cloud platforms, and email accounts.
 
-**Execution**
-- **Command and Scripting Interpreter – PowerShell (T1059.001):** Post-compromise execution of payloads using native Windows scripting.
-- **Scheduled Task/Job (T1053):** Used for maintaining persistence and executing malware on a recurring basis.
+### Execution
+- **PowerShell Execution** — T1059.001  
+  Commands and payloads run via built-in Windows scripting tools.
+- **Scheduled Task/Job** — T1053  
+  Tasks scheduled for persistence or delayed execution of payloads.
 
-**Persistence**
-- **Service Registry Modification (T1547.001):** Modification of Windows registry keys to maintain access on compromised hosts.
-- **Application Layer Protocol – HTTPS (T1071.001):** C2 traffic is hidden within legitimate HTTPS traffic to avoid detection.
+### Persistence
+- **Registry Run Keys / Startup Folder** — T1547.001  
+  Registry edits used to maintain access after reboot.
+- **Application Layer Protocol – HTTPS** — T1071.001  
+  Encrypted HTTPS traffic used to blend C2 with legitimate traffic.
 
-**Credential Access**
-- **Credential Dumping (T1003):** Tools like Mimikatz or custom scripts are used to extract credentials from LSASS or SAM databases.
-- **Token Impersonation (T1134.001):** Abused OAuth tokens and service accounts to access cloud resources without triggering MFA.
+### Credential Access
+- **Credential Dumping** — T1003  
+  Dumping credentials from LSASS or Security Accounts Manager (SAM) database.
+- **Token Impersonation** — T1134.001  
+  Abusing OAuth tokens or access tokens to impersonate users in cloud environments.
 
-**Command and Control**
-- **Web Service (T1102):** Abuse of cloud platforms and compromised infrastructure to route C2 communications.
-- **Domain Fronting (T1090.004):** Used to obscure true C2 infrastructure by masking traffic as if it were going to trusted services.
+### Command and Control
+- **Web Service (C2)** — T1102  
+  Using cloud services, blogs, and shared drives to route command and control.
+- **Domain Fronting** — T1090.004  
+  Hiding real C2 infrastructure behind trusted domains.
 
-**Exfiltration**
-- **Exfiltration Over Web Services (T1567.002):** Data is exfiltrated using encrypted HTTPS traffic or cloud file-sharing platforms.
+### Exfiltration
+- **Exfiltration Over Web Services** — T1567.002  
+  Data is exfiltrated through HTTPS or cloud apps like OneDrive and Dropbox.
 
-APT29 regularly adapts its methods to evade detection, often blending in with legitimate user activity and trusted infrastructure.
+</details>
+
+APT29 frequently blends these techniques to evade detection, often relying on legitimate tools, platforms, and credentials rather than easily-flagged malware.
