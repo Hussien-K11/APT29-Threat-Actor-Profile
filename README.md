@@ -93,3 +93,91 @@ APT29’s operations align with a wide set of MITRE ATT&CK techniques. The group
 </details>
 
 APT29 frequently blends these techniques to evade detection, often relying on legitimate tools, platforms, and credentials rather than easily-flagged malware.
+
+---
+
+## ➃ KNOWN CAMPAIGNS
+
+APT29 has been attributed to several high-impact cyber espionage campaigns. These operations reflect the group’s strategic focus on intelligence gathering, long-term access, and stealthy intrusion methods.
+
+<details>
+<summary><strong>Click to view detailed summaries of major APT29 campaigns</strong></summary>
+
+<br>
+
+### SolarWinds Supply Chain Compromise (2020)
+
+**Summary:**  
+APT29 (tracked as UNC2452/Nobelium) compromised the build environment of SolarWinds' Orion platform. They inserted a backdoor (SUNBURST) into legitimate software updates, which were then distributed to over 18,000 customers.
+
+**Target:**  
+U.S. federal agencies, global IT firms, think tanks
+
+**Initial Access:**  
+Trojanised updates delivered via SolarWinds’ software supply chain
+
+**Tactics Observed:**  
+- Supply Chain Compromise – T1195.002  
+- Command and Control via HTTPS – T1071.001  
+- Credential Access and Lateral Movement  
+- Use of the SUNBURST and TEARDROP malware families
+
+**Outcome:**  
+Long-term, covert access to sensitive systems across U.S. infrastructure. Prompted global reviews of supply chain security.
+
+**Reference:**  
+[FireEye Analysis](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html)
+
+---
+
+### COVID-19 Vaccine Espionage Campaign (2020)
+
+**Summary:**  
+APT29 targeted academic and healthcare organisations involved in COVID-19 vaccine development. Spearphishing emails and custom malware (WellMess, WellMail) were used to attempt data theft.
+
+**Target:**  
+Pharmaceutical firms, universities, and research labs in the US, UK, and Canada
+
+**Initial Access:**  
+Spearphishing and credential harvesting
+
+**Tactics Observed:**  
+- Spearphishing via Service – T1566.003  
+- Use of custom malware (WellMess, WellMail)  
+- Credential Theft and Privilege Escalation
+
+**Outcome:**  
+Revealed the risk of state-sponsored espionage during a global health crisis. Attribution led to coordinated public advisories from multiple countries.
+
+**Reference:**  
+[UK NCSC Advisory](https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development)
+
+</details>
+
+---
+
+## ➄ INDICATORS OF COMPROMISE (IOCs)
+
+APT29 campaigns have produced a range of observable artefacts — known as Indicators of Compromise — which can be used to detect or investigate their activity. These include IP addresses, domains, file hashes, and registry paths.
+
+The following are example IOCs associated with past APT29 operations. These values should be treated as historical references and validated before use in any live detection pipeline.
+
+<details>
+<summary><strong>Click to view sample IOCs</strong></summary>
+
+<br>
+
+| Type     | Value                            | Context / Description                         |
+|----------|----------------------------------|-----------------------------------------------|
+| Domain   | `login-microsoft-secure[.]com`   | Credential harvesting domain (WellMess C2)    |
+| Domain   | `cloudsync-update[.]net`         | Likely used for C2 communication              |
+| IP       | `185.225.69.69`                  | Identified C2 infrastructure (WellMail)       |
+| IP       | `104.248.120.232`                | Historical C2 server                          |
+| SHA256   | `e3b0c44298fc1c149afbf4c8996fb924...` | SUNBURST dropper sample hash                  |
+| SHA1     | `af4edbf1cfc09485b50e5a683eb9d93df38dc437` | Linked to credential harvesting payload       |
+
+</details>
+
+> **Analyst Note:**  
+> IOCs are context-sensitive and often time-limited. Use them alongside behavioural analytics, TTPs, and log correlation for effective detection. When possible, prioritise mapping IOCs to observed techniques (e.g., MITRE) rather than relying on standalone indicators.
+
