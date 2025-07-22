@@ -213,34 +213,34 @@ The following table outlines key techniques attributed to APT29, grouped by atta
 
 ## ➆ DEFENSIVE RECOMMENDATIONS
 
-Based on APT29’s observed tactics, the following defensive measures are recommended to strengthen detection and response within a SOC environment:
+Based on APT29’s observed tradecraft, the following recommendations are designed to help SOC teams strengthen detection and response capabilities.
 
 ### Initial Access
-- Implement email filtering rules to detect spearphishing lures containing suspicious links or file types
-- Flag logins from new geographic locations or unfamiliar devices, especially if tied to privileged accounts
+- Deploy email filters to catch spearphishing attempts, especially those with embedded links or file attachments
+- Flag logins from new locations, unusual devices, or impossible travel events, particularly for privileged accounts
 
 ### Credential Access
-- Monitor for use of credential dumping tools (e.g., access to LSASS, use of Mimikatz-like behaviours)
-- Alert on anomalous OAuth token use, particularly for cloud services like Microsoft 365
+- Detect access to LSASS memory and tools commonly used for credential dumping
+- Monitor unusual OAuth token use in cloud environments such as Microsoft 365
 
 ### Persistence
-- Monitor registry changes to common persistence keys (`Run`, `RunOnce`, etc.)
-- Detect creation of scheduled tasks tied to unknown binaries or scripts
+- Alert on creation or modification of scheduled tasks, particularly those running unsigned binaries
+- Monitor changes to Windows registry keys often used for persistence (e.g., `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`)
 
 ### Command and Control
-- Monitor for domain fronting, or encrypted HTTPS traffic to rare or unclassified domains
-- Inspect beacon-like behaviour (low, regular traffic bursts) during off-peak hours
+- Inspect beacon-like outbound traffic patterns to uncommon or unclassified domains over HTTPS
+- Identify potential domain fronting activity using traffic analysis and TLS SNI inspection
 
 ### Exfiltration
-- Monitor outbound file transfers to cloud storage services (e.g., OneDrive, Dropbox) from sensitive systems
-- Correlate sudden data access with external upload patterns
+- Detect large or unusual outbound data transfers to cloud storage services (e.g., OneDrive, Dropbox)
+- Correlate exfiltration behaviour with prior internal reconnaissance or privilege escalation activity
 
-### General Recommendations
-- Align internal detection rules with MITRE ATT&CK techniques (e.g., tag alerts with TTP IDs like T1071.001)
-- Conduct regular threat hunting based on TTP behaviour, not just IOCs
+### Strategic Recommendations
+- Align detection content and SIEM rules to MITRE ATT&CK techniques to enable technique-based alerting
+- Conduct proactive threat hunts using known APT29 TTPs rather than relying solely on IOCs
 
 > **Analyst Note:**  
-> Defensive strategies should prioritise **behaviour-based detection** over static indicators. While IOCs are helpful, APT29 frequently shifts infrastructure and tooling. Building detections around their techniques ensures longer-lasting, adaptable defences.
+> These recommendations emphasise behavioural detection over static indicators. APT29 frequently shifts infrastructure and payloads, making IOC-only defences fragile. A technique-focused approach offers better long-term coverage and resilience.
 
 
 ---
