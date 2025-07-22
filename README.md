@@ -93,6 +93,7 @@ APT29’s operations align with a wide set of MITRE ATT&CK techniques. The group
 </details>
 
 APT29 frequently blends these techniques to evade detection, often relying on legitimate tools, platforms, and credentials rather than easily-flagged malware.
+APT29 regularly adapts its methods to evade detection, often blending in with legitimate user activity and trusted infrastructure.
 
 ---
 
@@ -181,10 +182,6 @@ The following are example IOCs associated with past APT29 operations. These valu
 > **Analyst Note:**  
 > IOCs are context-sensitive and often time-limited. Use them alongside behavioural analytics, TTPs, and log correlation for effective detection. When possible, prioritise mapping IOCs to observed techniques (e.g., MITRE) rather than relying on standalone indicators.
 
-<<<<<<< HEAD
-=======
-APT29 regularly adapts its methods to evade detection, often blending in with legitimate user activity and trusted infrastructure.
-
 
 ---
 
@@ -210,4 +207,3 @@ The following table outlines key techniques attributed to APT29, grouped by atta
 
 > **Analyst Note:**  
 > Mapping adversary behaviour to MITRE techniques gives SOC teams a common language for threat analysis and detection. Unlike IOCs, which can quickly expire or be changed, TTPs provide behavioural insights that remain more stable over time. This allows detection engineers to focus on “how” the threat operates, not just “what” it uses.
->>>>>>> cd71958 (Add section ➅ MITRE ATT&CK Mapping with technique summary and analyst insight)
