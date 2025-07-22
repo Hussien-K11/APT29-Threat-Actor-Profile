@@ -181,3 +181,33 @@ The following are example IOCs associated with past APT29 operations. These valu
 > **Analyst Note:**  
 > IOCs are context-sensitive and often time-limited. Use them alongside behavioural analytics, TTPs, and log correlation for effective detection. When possible, prioritise mapping IOCs to observed techniques (e.g., MITRE) rather than relying on standalone indicators.
 
+<<<<<<< HEAD
+=======
+APT29 regularly adapts its methods to evade detection, often blending in with legitimate user activity and trusted infrastructure.
+
+
+---
+
+## ➅ MITRE ATT&CK MAPPING
+
+APT29’s tactics and techniques align with a broad set of MITRE ATT&CK entries across multiple phases of the intrusion lifecycle. Mapping their known behaviours to the MITRE framework supports defenders in building proactive detection rules, assessing threat coverage, and improving response strategies.
+
+The following table outlines key techniques attributed to APT29, grouped by attack phase.
+
+| Tactic              | Technique                                | MITRE ID      |
+|---------------------|-------------------------------------------|---------------|
+| Initial Access       | Spearphishing via Service                | T1566.003      |
+| Initial Access       | Valid Accounts                          | T1078          |
+| Execution            | PowerShell                              | T1059.001      |
+| Persistence          | Scheduled Task/Job                      | T1053          |
+| Persistence          | Registry Run Keys / Startup Folder      | T1547.001      |
+| Credential Access    | Credential Dumping                      | T1003          |
+| Credential Access    | Token Impersonation                     | T1134.001      |
+| Command & Control    | Web Service                             | T1102          |
+| Command & Control    | Domain Fronting                         | T1090.004      |
+| Exfiltration         | Exfiltration Over Web Services          | T1567.002      |
+| Supply Chain         | Compromise of Software Supply Chain     | T1195.002      |
+
+> **Analyst Note:**  
+> Mapping adversary behaviour to MITRE techniques gives SOC teams a common language for threat analysis and detection. Unlike IOCs, which can quickly expire or be changed, TTPs provide behavioural insights that remain more stable over time. This allows detection engineers to focus on “how” the threat operates, not just “what” it uses.
+>>>>>>> cd71958 (Add section ➅ MITRE ATT&CK Mapping with technique summary and analyst insight)
