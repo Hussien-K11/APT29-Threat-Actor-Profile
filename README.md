@@ -244,3 +244,19 @@ Based on APT29’s observed tradecraft, the following recommendations are design
 
 
 ---
+
+## ➇ VISUALS & SCREENSHOTS
+
+The following MITRE ATT&CK matrix shows a focused subset of techniques attributed to APT29. These were selected based on their relevance to Tier 1–2 SOC detection and frequency in real-world campaigns.
+
+<details>
+<summary><strong>Click to view APT29 MITRE ATT&CK Mapping (Focused View)</strong></summary>
+
+<br>
+
+![MITRE ATT&CK Mapping](assets/mitre_mapping_focused.png)
+
+</details>
+
+> View the full official APT29 layer:  
+> [https://attack.mitre.org/groups/G0016/](https://attack.mitre.org/groups/G0016/)
