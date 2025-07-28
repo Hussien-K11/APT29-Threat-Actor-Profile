@@ -321,9 +321,8 @@ Going forward, I’d like to:
 **Hussien Kofi**  
 Aspiring SOC Analyst | Threat-Informed | Detection-Focused 
 
-**This project is part of a practical cybersecurity portfolio focused on entry-level SOC analyst skills — including adversary profiling, MITRE ATT&CK mapping, IOC analysis, and visual threat intelligence.**
-
 📧 [Email](mailto:Hussienkofi@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/hussien-kofi-99a012330/)  
 💻 [GitHub](https://github.com/Hussien-K11)
 
+**This project is part of a practical cybersecurity portfolio focused on entry-level SOC analyst skills — including adversary profiling, MITRE ATT&CK mapping, IOC analysis, and visual threat intelligence.**
