@@ -49,7 +49,9 @@ Understanding the intent and methods of APT29 is essential for modern defence te
 
 ## ➂ TACTICS, TECHNIQUES, AND PROCEDURES (TTPs)
 
-APT29’s operations align with a wide set of MITRE ATT&CK techniques. The group is known for stealthy, long-term access using minimal malware and careful abuse of legitimate services.
+APT29’s operations demonstrate a consistent emphasis on stealth, strategic access, and operational discipline. The group favours minimal malware, instead abusing legitimate tools, credentials, and services to evade detection and blend into normal activity.
+
+The following techniques — mapped to the MITRE ATT&CK framework — reflect common patterns across multiple APT29 campaigns. These include phishing, cloud abuse, credential theft, and encrypted command-and-control channels.
 
 <details>
 <summary><strong>Click to expand full list of tactics and techniques</strong></summary>
@@ -92,8 +94,8 @@ APT29’s operations align with a wide set of MITRE ATT&CK techniques. The group
 
 </details>
 
-APT29 frequently blends these techniques to evade detection, often relying on legitimate tools, platforms, and credentials rather than easily-flagged malware.
-APT29 regularly adapts its methods to evade detection, often blending in with legitimate user activity and trusted infrastructure.
+> **Analyst Note:**  
+> These techniques reveal how APT29 achieves long-term access by prioritising stealth over brute force. The use of built-in tools, compromised credentials, and encrypted channels makes traditional IOC-based detection difficult. Mapping these behaviours to MITRE ATT&CK helps defenders shift toward behaviour-driven detection and hunt strategies.
 
 ---
 
@@ -256,7 +258,7 @@ The following image presents a custom MITRE ATT&CK mapping for APT29, visually h
 
 ---
 
-## ➈ DEFENSIVE RECOMMENDATIONS
+## ➈ SOC HARDENING SUMMARY
 
 APT29 prioritises stealth, credential theft, and long-term access. Defenders should consider detection engineering and hardening controls that map to their known TTPs.
 
@@ -296,3 +298,14 @@ Going forward, I’d like to:
 
 > **Analyst Note:**  
 > APT29 taught me the value of patience, stealth, and operational maturity in adversary behaviour. This profile helped me practise not just how to observe threats — but how to communicate them clearly to others.
+
+---
+
+---
+
+## Sources & References
+
+- https://attack.mitre.org/groups/G0016/
+- https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html
+- https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development
+- https://www.microsoft.com/en-us/security/blog/2021/10/25/nobelium-returning-to-target-governments/
