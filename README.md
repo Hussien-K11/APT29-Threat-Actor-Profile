@@ -316,7 +316,12 @@ Going forward, I’d like to:
 - https://www.microsoft.com/en-us/security/blog/2021/10/25/nobelium-returning-to-target-governments/
 
 
-## Connect with Me
+## Let’s Connect
+
+**Hussien Kofi**  
+Aspiring SOC Analyst | Threat-Informed | Detection-Focused 
+
+**This project is part of a practical cybersecurity portfolio focused on entry-level SOC analyst skills — including adversary profiling, MITRE ATT&CK mapping, IOC analysis, and visual threat intelligence.**
 
 📧 [Email](mailto:Hussienkofi@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/hussien-kofi-99a012330/)  
