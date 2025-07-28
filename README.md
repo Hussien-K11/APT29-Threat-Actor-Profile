@@ -1,6 +1,11 @@
 ---
 
 # APT29 Threat Actor Profile
+![Threat Group](https://img.shields.io/badge/Threat%20Group-APT29%20%7C%20Cozy%20Bear-blueviolet)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-Mapped%20%26%20Visualised-brightgreen)
+![Built By](https://img.shields.io/badge/Built%20By-Hussien%20Kofi-blue)
+![Status](https://img.shields.io/badge/Status-Complete-success)
+
 
 ---
 
@@ -213,7 +218,7 @@ The following table outlines key techniques attributed to APT29, grouped by atta
 
 ---
 
-## ➆ DEFENSIVE RECOMMENDATIONS
+## ➆ DETECTION STRATEGIES & RECOMMENDATIONS
 
 Based on APT29’s observed tradecraft, the following recommendations are designed to help SOC teams strengthen detection and response capabilities.
 
@@ -309,3 +314,11 @@ Going forward, I’d like to:
 - https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html
 - https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development
 - https://www.microsoft.com/en-us/security/blog/2021/10/25/nobelium-returning-to-target-governments/
+
+
+## Connect with Me
+
+📧 [Email](mailto:Hussienkofi@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/hussien-kofi-99a012330/)  
+💻 [GitHub](https://github.com/Hussien-K11)
+
