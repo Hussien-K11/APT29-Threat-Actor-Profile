@@ -253,3 +253,46 @@ The following image presents a custom MITRE ATT&CK mapping for APT29, visually h
 
 > **Analyst Note:**  
 > This custom visual highlights select techniques attributed to APT29 across campaigns like SolarWinds and COVID-19 vaccine espionage. Colour-coded tactics help illustrate the attack flow and operational emphasis of this adversary. While not exhaustive, it offers a practical reference point for detection engineering and adversary emulation.
+
+---
+
+## ➈ DEFENSIVE RECOMMENDATIONS
+
+APT29 prioritises stealth, credential theft, and long-term access. Defenders should consider detection engineering and hardening controls that map to their known TTPs.
+
+| Category               | Recommendation                                                                 |
+|------------------------|----------------------------------------------------------------------------------|
+| Email Security         | Deploy advanced phishing protection with sandboxing and link detonation.       |
+| Identity & Access      | Monitor for unusual MFA bypasses, OAuth abuse, and anomalous cloud logins.     |
+| Credential Protection  | Enable LSASS protection, block cleartext credentials, and audit token usage.   |
+| Endpoint Detection     | Deploy EDR capable of detecting PowerShell misuse and registry persistence.    |
+| Threat Hunting         | Hunt for use of domain fronting, suspicious scheduled tasks, and unusual C2.   |
+| Logging & Telemetry    | Ensure coverage of Windows Event Logs, cloud auth logs, and command execution. |
+| User Behaviour         | Baseline privileged user behaviour; investigate anomalies in 365/OAuth usage.  |
+| MITRE Coverage         | Prioritise detection for T1078, T1566.003, T1059.001, and T1003 techniques.     |
+
+> **Analyst Note:**  
+> Defensive planning against APT29 should focus less on malware signatures and more on **behavioural patterns** — particularly credential theft, API abuse, and stealthy persistence. Mapping defences to ATT&CK techniques strengthens long-term detection posture.
+
+
+---
+
+## ➉ FINAL REFLECTION & TAKEAWAYS
+
+This project challenged me to think like a threat intelligence analyst while building structured documentation that could realistically support SOC operations. What began as a simple actor profile evolved into a deeper exercise in research, technical mapping, and visual storytelling.
+
+I learned to:
+- Identify and validate TTPs from multiple public sources
+- Use the MITRE ATT&CK Navigator to visualise threat behaviour
+- Translate raw intelligence into actionable detection insights
+- Maintain clarity and structure in a recruiter-facing README
+
+The hardest part was mapping techniques precisely — understanding sub-techniques and ensuring accuracy required me to revisit MITRE's documentation multiple times. It taught me that **good detection relies on nuance**, not just labels.
+
+Going forward, I’d like to:
+- Explore more actors and compare their TTP overlap
+- Build detection rules (e.g., Sigma) for some mapped behaviours
+- Include custom threat hunt queries and detection gaps
+
+> **Analyst Note:**  
+> APT29 taught me the value of patience, stealth, and operational maturity in adversary behaviour. This profile helped me practise not just how to observe threats — but how to communicate them clearly to others.
