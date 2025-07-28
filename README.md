@@ -245,18 +245,11 @@ Based on APT29’s observed tradecraft, the following recommendations are design
 
 ---
 
-## ➇ VISUALS & SCREENSHOTS
+## ➇ VISUAL TECHNIQUE MAP
 
-The following MITRE ATT&CK matrix shows a focused subset of techniques attributed to APT29. These were selected based on their relevance to Tier 1–2 SOC detection and frequency in real-world campaigns.
+The following image presents a custom MITRE ATT&CK mapping for APT29, visually highlighting key techniques observed across different stages of the intrusion lifecycle. This was created using the MITRE ATT&CK Navigator and tailored to match techniques discussed in this profile.
 
-<details>
-<summary><strong>Click to view APT29 MITRE ATT&CK Mapping (Focused View)</strong></summary>
+![MITRE ATT&CK technique map of APT29](./images/mitre_mapping_apt29.png)
 
-<br>
-
-![MITRE ATT&CK Mapping](assets/mitre_mapping_focused.png)
-
-</details>
-
-> View the full official APT29 layer:  
-> [https://attack.mitre.org/groups/G0016/](https://attack.mitre.org/groups/G0016/)
+> **Analyst Note:**  
+> This custom visual highlights select techniques attributed to APT29 across campaigns like SolarWinds and COVID-19 vaccine espionage. Colour-coded tactics help illustrate the attack flow and operational emphasis of this adversary. While not exhaustive, it offers a practical reference point for detection engineering and adversary emulation.
