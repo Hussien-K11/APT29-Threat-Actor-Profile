@@ -294,7 +294,7 @@ I learned to:
 - Translate raw intelligence into actionable detection insights
 - Maintain clarity and structure in a recruiter-facing README
 
-The hardest part was mapping techniques precisely — understanding sub-techniques and ensuring accuracy required me to revisit MITRE's documentation multiple times. It taught me that **good detection relies on nuance**, not just labels.
+The hardest part was mapping techniques precisely understanding sub-techniques and ensuring accuracy required me to revisit MITRE's documentation multiple times. It taught me that **good detection relies on nuance**, not just labels.
 
 Going forward, I’d like to:
 - Explore more actors and compare their TTP overlap
