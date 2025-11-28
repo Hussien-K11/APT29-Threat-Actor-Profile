@@ -56,7 +56,7 @@ Understanding the intent and methods of APT29 is essential for modern defence te
 
 APT29’s operations demonstrate a consistent emphasis on stealth, strategic access, and operational discipline. The group favours minimal malware, instead abusing legitimate tools, credentials, and services to evade detection and blend into normal activity.
 
-The following techniques — mapped to the MITRE ATT&CK framework — reflect common patterns across multiple APT29 campaigns. These include phishing, cloud abuse, credential theft, and encrypted command-and-control channels.
+The following techniques mapped to the MITRE ATT&CK framework reflect common patterns across multiple APT29 campaigns. These include phishing, cloud abuse, credential theft, and encrypted command-and-control channels.
 
 <details>
 <summary><strong>Click to expand full list of tactics and techniques</strong></summary>
