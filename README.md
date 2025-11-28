@@ -279,7 +279,7 @@ APT29 prioritises stealth, credential theft, and long-term access. Defenders sho
 | MITRE Coverage         | Prioritise detection for T1078, T1566.003, T1059.001, and T1003 techniques.     |
 
 > **Analyst Note:**  
-> Defensive planning against APT29 should focus less on malware signatures and more on **behavioural patterns** — particularly credential theft, API abuse, and stealthy persistence. Mapping defences to ATT&CK techniques strengthens long-term detection posture.
+> Defensive planning against APT29 should focus less on malware signatures and more on **behavioural patterns** particularly credential theft, API abuse, and stealthy persistence. Mapping defences to ATT&CK techniques strengthens long-term detection posture.
 
 
 ---
