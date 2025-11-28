@@ -302,7 +302,7 @@ Going forward, I’d like to:
 - Include custom threat hunt queries and detection gaps
 
 > **Analyst Note:**  
-> APT29 taught me the value of patience, stealth, and operational maturity in adversary behaviour. This profile helped me practise not just how to observe threats — but how to communicate them clearly to others.
+> APT29 taught me the value of patience, stealth, and operational maturity in adversary behaviour. This profile helped me practise not just how to observe threats but how to communicate them clearly to others.
 
 ---
 
