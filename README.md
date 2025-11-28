@@ -166,7 +166,7 @@ Revealed the risk of state-sponsored espionage during a global health crisis. At
 
 ## ➄ INDICATORS OF COMPROMISE (IOCs)
 
-APT29 campaigns have produced a range of observable artefacts — known as Indicators of Compromise — which can be used to detect or investigate their activity. These include IP addresses, domains, file hashes, and registry paths.
+APT29 campaigns have produced a range of observable artefacts known as Indicators of Compromise which can be used to detect or investigate their activity. These include IP addresses, domains, file hashes, and registry paths.
 
 The following are example IOCs associated with past APT29 operations. These values should be treated as historical references and validated before use in any live detection pipeline.
 
